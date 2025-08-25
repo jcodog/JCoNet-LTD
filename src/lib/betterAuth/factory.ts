@@ -9,8 +9,6 @@ export type AuthEnv = {
   COOKIE_DOMAIN?: string;
 };
 
-const db = drizzle(process.env.DATABASE_URL ?? "");
-
 export const createAuth = (env: AuthEnv) => {
   const db = drizzle(env.DATABASE_URL ?? "");
 
