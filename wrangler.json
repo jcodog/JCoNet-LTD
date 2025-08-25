@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jconet-ltd-backend",
+  "main": "src/server/index.ts",
+  "compatibility_date": "2025-08-21",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_als",
+    "no_handle_cross_request_promise_resolution"
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "placement": {
+    "mode": "smart"
+  },
+  "workers_dev": false,
+  "preview_urls": false,
+  "dev": {
+    "port": 8080
+  }
+}
