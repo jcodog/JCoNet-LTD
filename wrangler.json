@@ -8,6 +8,12 @@
     "nodejs_als",
     "no_handle_cross_request_promise_resolution"
   ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "jconet-core"
+    }
+  ],
   "observability": {
     "enabled": true
   },
