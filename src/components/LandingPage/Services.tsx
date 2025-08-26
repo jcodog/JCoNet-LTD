@@ -10,7 +10,7 @@ export const Services = () => {
             Services
           </h2>
           <p className="text-muted-foreground">
-            Work with us to build something new—or purchase code you can run
+            Work with us to build something new, or purchase code you can run
             today.
           </p>
         </div>

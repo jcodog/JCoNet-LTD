@@ -5,9 +5,16 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/providers/theme";
 
 export const metadata: Metadata = {
-  title: "JStack App",
-  description: "Created using JStack",
+  title: "JCoNet LTD",
+  description: "The official site for JCoNet LTD",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
+  creator: "JCoNet LTD",
+  authors: [
+    {
+      name: "JCoDog",
+      url: "https://github.com/jcodog",
+    },
+  ],
 };
 
 export default function RootLayout({

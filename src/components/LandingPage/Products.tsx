@@ -31,13 +31,18 @@ export const Products = () => {
               <div>
                 <h3 className="text-lg font-semibold">Cleo</h3>
                 <p className="text-sm text-muted-foreground">
-                  Creator‑first AI assistant that connects to your community.
+                  Creator‑first AI discord bot that connects to your community.
                 </p>
               </div>
             </div>
             <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
-              <li>Answers community questions using your sources</li>
-              <li>Discord and web chat integrations</li>
+              <li>Moderates your community</li>
+              <li>
+                Discord integration with a suite of commands key to your staff
+              </li>
+              <li>
+                Fun commands and an AI agent for you and your users to enjoy
+              </li>
               <li>Privacy‑aware and configurable</li>
             </ul>
             <div className="mt-4">
