@@ -8,7 +8,12 @@ export const ScrollArea = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={cn("flex-1 overflow-y-auto no-scrollbar", className)}>
+    <div
+      className={cn(
+        "flex-1 overflow-y-auto no-scrollbar scroll-smooth",
+        className
+      )}
+    >
       <div className="min-h-full">{children}</div>
     </div>
   );

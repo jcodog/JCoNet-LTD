@@ -14,8 +14,8 @@ export const DecorativeBackground = () => {
       {/* soft ring */}
       <div className="absolute left-1/2 top-[22%] -translate-x-1/2 size-[68rem] rounded-full bg-[conic-gradient(var(--ring)_0deg,transparent_120deg,transparent_240deg,var(--ring)_360deg)] opacity-[0.07] [mask-image:radial-gradient(closest-side,#000_55%,transparent_75%)]" />
 
-      {/* texture */}
-      <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-[0.04] mix-blend-overlay" />
+      {/* texture (CSS-only speckle, no SVG) */}
+      <div className="absolute inset-0 mix-blend-overlay opacity-[0.04] [background-image:radial-gradient(circle,rgba(255,255,255,0.12)_1px,transparent_1.3px),radial-gradient(circle,rgba(0,0,0,0.12)_1px,transparent_1.3px)] [background-size:3px_3px,3px_3px] [background-position:0_0,1.5px_1.5px]" />
     </div>
   );
 };
