@@ -70,12 +70,12 @@ export const Hero = () => {
                 </Button>
               </div>
 
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-3 text-sm">
                 {/* Item 1 */}
                 <li>
                   <button
                     type="button"
-                    className="group relative w-full cursor-pointer overflow-hidden rounded-full px-3 py-2 pl-8 pr-12 text-left outline-none ring-2 ring-transparent ring-offset-4 ring-offset-background transition-all duration-150 ease-out focus-visible:ring-ring focus-visible:delay-300"
+                    className="group relative w-full h-10 cursor-pointer overflow-hidden rounded-full px-3 pl-8 pr-12 text-left outline-none"
                   >
                     <span
                       aria-hidden
@@ -95,7 +95,7 @@ export const Hero = () => {
                 <li>
                   <button
                     type="button"
-                    className="group relative w-full cursor-pointer overflow-hidden rounded-full px-3 py-2 pl-8 pr-12 text-left outline-none ring-2 ring-transparent ring-offset-4 ring-offset-background transition-all duration-150 ease-out focus-visible:ring-ring focus-visible:delay-300"
+                    className="group relative w-full h-10 cursor-pointer overflow-hidden rounded-full px-3 pl-8 pr-12 text-left outline-none"
                   >
                     <span
                       aria-hidden
@@ -115,11 +115,11 @@ export const Hero = () => {
                 <li>
                   <button
                     type="button"
-                    className="group relative w-full cursor-pointer overflow-hidden rounded-full px-3 py-2 pl-8 pr-12 text-left outline-none ring-2 ring-transparent ring-offset-4 ring-offset-background transition-all duration-150 ease-out focus-visible:ring-ring focus-visible:delay-300"
+                    className="group relative w-full h-10 cursor-pointer overflow-hidden rounded-full px-3 pl-8 pr-12 text-left outline-none"
                   >
                     <span
                       aria-hidden
-                      className="absolute left-3 top-1/2 z-0 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-chart-4 transition-all duration-300 ease-out group-hover:left-0 group-hover:h-full group-hover:w-full group-hover:rounded-full group-hover:bg-chart-4/30 group-focus-visible:left-0 group-focus-visible:h-full group-focus-visible:w-full group-focus-visible:rounded-full group-focus-visible:bg-chart-4/30"
+                      className="absolute left-3 top-1/2 z-0 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-chart-3 transition-all duration-300 ease-out group-hover:left-0 group-hover:h-full group-hover:w-full group-hover:rounded-full group-hover:bg-chart-3/30 group-focus-visible:left-0 group-focus-visible:h-full group-focus-visible:w-full group-focus-visible:rounded-full group-focus-visible:bg-chart-3/30"
                     />
                     <span className="relative z-10">
                       Code snippet marketplace
@@ -135,11 +135,11 @@ export const Hero = () => {
                 <li>
                   <button
                     type="button"
-                    className="group relative w-full cursor-pointer overflow-hidden rounded-full px-3 py-2 pl-8 pr-12 text-left outline-none ring-2 ring-transparent ring-offset-4 ring-offset-background transition-all duration-150 ease-out focus-visible:ring-ring focus-visible:delay-300"
+                    className="group relative w-full h-10 cursor-pointer overflow-hidden rounded-full px-3 pl-8 pr-12 text-left outline-none"
                   >
                     <span
                       aria-hidden
-                      className="absolute left-3 top-1/2 z-0 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-chart-3 transition-all duration-300 ease-out group-hover:left-0 group-hover:h-full group-hover:w-full group-hover:rounded-full group-hover:bg-chart-3/30 group-focus-visible:left-0 group-focus-visible:h-full group-focus-visible:w-full group-focus-visible:rounded-full group-focus-visible:bg-chart-3/30"
+                      className="absolute left-3 top-1/2 z-0 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-chart-4 transition-all duration-300 ease-out group-hover:left-0 group-hover:h-full group-hover:w-full group-hover:rounded-full group-hover:bg-chart-4/30 group-focus-visible:left-0 group-focus-visible:h-full group-focus-visible:w-full group-focus-visible:rounded-full group-focus-visible:bg-chart-4/30"
                     />
                     <span className="relative z-10">
                       Freelance project work
