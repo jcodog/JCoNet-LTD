@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jconet-ltd-backend",
+  "main": "src/server/index.ts",
+  "compatibility_date": "2025-08-21",
+  "compatibility_flags": ["nodejs_compat", "nodejs_als"],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "jconet-core"
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "backend.jconet.co.uk",
+      "custom_domain": true
+    }
+  ],
+  "workers_dev": false,
+  "preview_urls": false,
+  "placement": {
+    "mode": "smart"
+  },
+  "dev": {
+    "port": 8080
+  }
+}

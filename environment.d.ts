@@ -4,6 +4,7 @@ declare global {
       DATABASE_URL: string;
       BETTER_AUTH_SECRET: string;
       NEXT_PUBLIC_SITE_URL: string;
+      NEXT_PUBLIC_API_URL: string;
       COOKIE_DOMAIN: string;
     }
   }

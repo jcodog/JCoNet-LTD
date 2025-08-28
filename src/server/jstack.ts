@@ -1,4 +1,4 @@
-import { InferMiddlewareOutput, jstack } from "jstack";
+import { jstack } from "jstack";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { env } from "hono/adapter";
 import { getWorkerAuth } from "@/lib/betterAuth/workers";
@@ -6,6 +6,10 @@ import { HTTPException } from "hono/http-exception";
 
 export interface Env {
   Bindings: {
+    // Cloudflare
+    R2: KVNamespace;
+
+    // Secrets and vars
     DATABASE_URL: string;
     MAILCHANNELS_API_KEY: string;
     MC_DKIM_PRIVATE_KEY: string;
@@ -34,6 +38,11 @@ const databaseMiddleware = j.middleware(async ({ c, next }) => {
   return await next({ db });
 });
 
+/**
+ * Type-safely injects authentiation into the protected procedures
+ *
+ * This works with betterauth by extracting the auth session from the headers
+ */
 const authMiddleware = j.middleware(async ({ c, next }) => {
   const auth = getWorkerAuth(c);
   const session = await auth.api.getSession({ headers: c.req.raw.headers });
@@ -49,4 +58,9 @@ const authMiddleware = j.middleware(async ({ c, next }) => {
  */
 export const publicProcedure = j.procedure.use(databaseMiddleware);
 
+/**
+ * Private (authenticated) procedures
+ *
+ * This is used for interacting with data reliant on user sessions and security checks
+ */
 export const privateProcedure = publicProcedure.use(authMiddleware);
