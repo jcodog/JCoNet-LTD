@@ -4,6 +4,7 @@ import { Hero } from "@/components/LandingPage/Hero";
 import { Products } from "@/components/LandingPage/Products";
 import { Services } from "@/components/LandingPage/Services";
 import { Testimonials } from "@/components/LandingPage/Testimonials";
+import { Offerings } from "@/components/LandingPage/Offerings";
 import { DecorativeBackground } from "@/components/LandingPage/ui/Background";
 import { ScrollArea } from "@/components/LandingPage/ui/ScrollArea";
 
@@ -20,11 +21,8 @@ export default async function Home() {
         {/* Hero */}
         <Hero />
 
-        {/* Products */}
-        <Products />
-
-        {/* Services */}
-        <Services />
+        {/* Products & Services overview */}
+        <Offerings />
 
         {/* Testimonials */}
         <Testimonials />
