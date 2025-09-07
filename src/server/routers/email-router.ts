@@ -1,5 +1,5 @@
 import { sendEmail } from "@/lib/email/send";
-import { buildTestEmail } from "@/lib/email/testEmail";
+import { buildTestEmail } from "@/lib/email/templates/testEmail";
 import { j, publicProcedure } from "@/server/jstack";
 import { env } from "hono/adapter";
 import z from "zod";
