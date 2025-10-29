@@ -9,7 +9,7 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "dev": "next dev",
-    "lint": "next lint",
+    "lint": "eslint .",
     "start": "next start",
     "start:dev": "mprocs"
   },
