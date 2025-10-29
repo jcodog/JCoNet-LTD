@@ -1,0 +1,5 @@
+procs:
+  frontend:
+    shell: "bunx next dev"
+  backend:
+    shell: "bunx wrangler dev"
