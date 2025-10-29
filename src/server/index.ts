@@ -1,6 +1,7 @@
 import { emailRouter } from "@/server/routers/email-router";
 import { j } from "./jstack";
 import { cors } from "hono/cors";
+import { marbleRouter } from "@/server/routers/marble-router";
 
 const allowedOrigins = new Set([
   "http://localhost:3000",
@@ -40,6 +41,7 @@ const api = j
  */
 const appRouter = j.mergeRouters(api, {
   email: emailRouter,
+  marble: marbleRouter,
 });
 
 export type AppRouter = typeof appRouter;

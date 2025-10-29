@@ -18,6 +18,8 @@ export interface Env {
     BETTER_AUTH_SECRET: string;
     NEXT_PUBLIC_SITE_URL: string;
     COOKIE_DOMAIN: string;
+    MARBLE_API_URL: string;
+    MARBLE_WORKSPACE_KEY: string;
   };
 }
 
